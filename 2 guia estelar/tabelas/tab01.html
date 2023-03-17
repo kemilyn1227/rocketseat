@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+       
+        table{
+            border-collapse: collapse;
+            width: 200px;
+            height: 100px;
+        }
+        td,th{
+            border: 1px solid black;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+<table>
+    <caption>produzidos e vendidos</caption>
+
+    <colgroup>
+    <col>
+    <col span = "2" style="background-color: aquamarine;">
+    <col span="2"   style="background-color: cornflowerblue;">
+</colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">loja 1</th>
+            <th colspan="2" scope="colgroup">loja 2</th>
+        </tr>
+   
+    
+        <tr>
+           <th scope="col">vendidos</th>
+           <th scope="col">produzidos</th>
+           <th scope="col">vendidos</th>
+           <th scope="col">produzidos</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">produto 1</th>
+            <td>4</td>
+            <td>5</td>
+            <td>7</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th scope="row">produto 2</th>
+            <td>3</td>
+            <td>6</td>
+            <td>5</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+   
+   
+</table>
+    
+</body>
+</html>
