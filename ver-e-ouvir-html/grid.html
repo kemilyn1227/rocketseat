@@ -1,0 +1,41 @@
+<style>
+    body{
+        
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+           "header header"
+           "main aside"
+           "footer footer";
+        grid-template-rows: 30px 1fr 40px;
+        grid-template-columns: 1fr 80px;
+
+    }
+    header{
+        grid-area: header;
+        background-color: aqua;
+    }
+    main{
+        grid-area: main;
+        background-color: blue;
+
+    }
+    aside{
+        grid-area: aside;
+        background-color:blueviolet;
+    }
+    footer{
+        grid-area: footer;
+        background-color: brown;
+    }
+
+</style>
+
+<body>
+    <header>topo</header>
+    <main>conteudo</main>
+    <aside>infos adicionais</aside>
+    <footer>rodapé</footer>
+</body>
