@@ -1,0 +1,26 @@
+/* first child*/
+
+ul li:first-child {
+    font-weight: bolder;
+    
+
+}
+
+div :first-child{
+    color: purple;
+}
+
+/*nht-of-type*/
+
+div p:nth-of-type(2){
+    color: blue;
+}
+
+/*nht-child(even) ou (odd)*/
+
+div p:nth-child(even){
+    color: rgb(74, 128, 199);
+}
+
+
+
