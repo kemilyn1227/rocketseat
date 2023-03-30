@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page{
+            border: 2px solid;
+            min-height: 100vh;
+
+            display: flex;
+        }
+        aside{
+            background-color: blueviolet;
+            flex: 1;
+        }
+        main{
+            background-color: rgb(92, 216, 123);
+            flex: 2;
+        
+
+            display: flex;
+            flex-direction: column;
+           
+        }
+        main section:nth-child(1){
+            background-color: cornflowerblue;
+            flex: 2;
+        }
+        main section:nth-child(2){
+            background-color: cyan;
+            flex: 1;
+            
+        }
+        main section:nth-child(3){
+            background-color: darkturquoise;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <aside>aside</aside>
+        <main>
+            <p>main</p>
+            <section>content 1</section>
+            <section>content 2</section>
+            <section>content 3</section>
+        </main>
+        
+    </div>
+</body>
+</html>
